@@ -206,10 +206,10 @@ src/components/charts/
 
 ---
 
-### Priority 5 - Pubblicazione Online (Da Eseguire Ciclicamente)
+### Priority 5 - Pubblicazione Online (Da Eseguire Dopo Priority 4)
 
 **Obiettivo:**
-Pubblicare la webapp su dominio live tramite FTP al completamento di ogni "Priority" descritta sopra.
+Pubblicare la webapp su dominio live tramite FTP al completamento della Priority 4 descritta sopra.
 
 **Credenziali & Setup:**
 - **FTP Host**: `ftp.faber04.com`
@@ -217,10 +217,10 @@ Pubblicare la webapp su dominio live tramite FTP al completamento di ogni "Prior
 - **Password**: `arubaLDV2021`
 - **Remote Path**: `/finance-analyzer`
 
-**Workflow Richiesto al Completamento di Ogni Priority:**
+**Workflow Richiesto al Completamento della Priority 4:**
 1. [ ] Eseguire la build per produzione (`npm run build`).
 2. [ ] Pubblicare via FTP il contenuto generato in `/dist` nella root `/finance-analyzer` del server di produzione.
-3. [ ] Committare tutti i cambiamenti (`git add -A` e `git commit -m "[Priority X] Completata e pubblicata"`).
+3. [ ] Committare tutti i cambiamenti (`git add -A` e `git commit -m "[Priority 4] Completata e pubblicata"`).
 4. [ ] Eseguire push sul branch `main`.
 
 ---

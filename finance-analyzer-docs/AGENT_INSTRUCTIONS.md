@@ -45,6 +45,7 @@ Sviluppare progressivamente una webapp di analisi finanziaria per investimenti V
 ## ✅ Workflow Standard per Ogni Task
 
 ### Fase 1: Comprensione (OBBLIGATORIA)
+
 ```
 1. Leggi i 4 file sopra
 2. Identifica cosa devi implementare
@@ -54,6 +55,7 @@ Sviluppare progressivamente una webapp di analisi finanziaria per investimenti V
 ```
 
 ### Fase 2: Pianificazione
+
 ```
 1. Elenca file da creare/modificare
 2. Identifica dependencies (quali componenti/funzioni servono)
@@ -62,6 +64,7 @@ Sviluppare progressivamente una webapp di analisi finanziaria per investimenti V
 ```
 
 ### Fase 3: Implementazione
+
 ```
 1. Segui i pattern esistenti (vedi esempi sotto)
 2. Usa TypeScript strict mode
@@ -71,6 +74,7 @@ Sviluppare progressivamente una webapp di analisi finanziaria per investimenti V
 ```
 
 ### Fase 4: Testing
+
 ```
 1. Verifica che compila (TypeScript errors?)
 2. Testa manualmente nel browser
@@ -79,6 +83,7 @@ Sviluppare progressivamente una webapp di analisi finanziaria per investimenti V
 ```
 
 ### Fase 5: Documentazione (OBBLIGATORIA)
+
 ```
 1. Aggiorna PROJECT_STATE.md:
    - Spunta checkbox completati
@@ -102,8 +107,8 @@ Sviluppare progressivamente una webapp di analisi finanziaria per investimenti V
    - Nuovi comandi
    - Nuove dipendenze
 
-5. Pubblicazione e Versioning (FINE PRIORITY):
-   - Al termine di un intero blocco "Priority", effettua la build dell'app.
+5. Pubblicazione e Versioning (FINE PRIORITY 4):
+   - Al termine del blocco "Priority 4", effettua la build dell'app.
    - Pubblica i file via FTP sul server di produzione (usa credenziali note).
    - Effettua sempre il commit e push sul branch `main`.
 ```
@@ -128,19 +133,19 @@ interface ComponentProps {
 export const NomeComponent: React.FC<ComponentProps> = ({ prop1, prop2 }) => {
   // 1. Store hooks
   const { action1, action2 } = useAppStore();
-  
+
   // 2. Local state
   const [localState, setLocalState] = useState('');
-  
+
   // 3. Handlers
   const handleSubmit = () => {
     // Validazione
     if (!localState) return;
-    
+
     // Action
     action1(localState);
   };
-  
+
   // 4. Render
   return (
     <Card title="Titolo" subtitle="Sottotitolo opzionale">
@@ -165,7 +170,7 @@ export const NomeComponent: React.FC<ComponentProps> = ({ prop1, prop2 }) => {
 // In store.ts
 addNuovaAction: (data: TipoInput) => {
   const id = `prefix_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-  
+
   set((state) => ({
     nuovoArray: [...state.nuovoArray, { ...data, id }],
   }));
@@ -196,19 +201,19 @@ export interface NuovoType {
 
 ```typescript
 // 1. React & libraries
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // 2. Internal absolute imports
-import { Card } from '@/components/common';
-import { useAppStore } from '@/store';
-import { Type1, Type2 } from '@/types';
+import { Card } from "@/components/common";
+import { useAppStore } from "@/store";
+import { Type1, Type2 } from "@/types";
 
 // 3. Relative imports
-import { helperFunction } from './helpers';
+import { helperFunction } from "./helpers";
 
 // 4. Assets/Styles (se necessario)
-import './styles.css';
+import "./styles.css";
 ```
 
 ---
@@ -216,12 +221,14 @@ import './styles.css';
 ## 🚫 Cosa NON Fare
 
 ### ❌ NON Modificare Senza Motivo:
+
 - Store structure (è già ottimizzato)
 - Types esistenti (estendi invece di modificare)
 - Componenti common (funzionano già bene)
 - Pattern di routing (è standard React Router)
 
 ### ❌ NON Usare:
+
 - Class components (solo functional)
 - Redux (abbiamo Zustand)
 - CSS custom files (usa Tailwind)
@@ -229,6 +236,7 @@ import './styles.css';
 - console.log in produzione (usa in dev, rimuovi dopo)
 
 ### ❌ NON Creare:
+
 - Duplicati di componenti esistenti
 - Utility functions se esistono già simili
 - Nuovi pattern senza documentarli
@@ -238,6 +246,7 @@ import './styles.css';
 ## ✅ Cosa Fare SEMPRE
 
 ### ✅ DO Use:
+
 - TypeScript strict types
 - Tailwind per styling
 - Componenti common esistenti
@@ -245,12 +254,14 @@ import './styles.css';
 - React hooks (useState, useEffect, useMemo, useCallback)
 
 ### ✅ DO Check:
+
 - TypeScript compila senza errori
 - No warning in console
 - Responsive design (mobile + desktop)
 - Accessibilità base (labels, aria-labels dove serve)
 
 ### ✅ DO Document:
+
 - Commenti per logica complessa
 - JSDoc per funzioni utility complesse
 - Aggiornare PROJECT_STATE.md
@@ -263,6 +274,7 @@ import './styles.css';
 Quando l'utente chiede "continua" o "prosegui", usa questo ordine:
 
 ### Priority 1: Portfolio Module
+
 1. Creare `src/components/modules/portfolio/PortfolioList.tsx`
 2. Creare `src/components/modules/portfolio/AddPositionForm.tsx`
 3. Creare `src/components/modules/portfolio/PositionCard.tsx`
@@ -270,11 +282,13 @@ Quando l'utente chiede "continua" o "prosegui", usa questo ordine:
 5. Aggiungere chart allocazione settori
 
 ### Priority 2: Journal Module
+
 1. Creare componenti journal
 2. Implementare form entry
 3. Aggiungere filtri e search
 
 ### Priority 3: API Integration
+
 1. Servizio API base
 2. Integrazione Alpha Vantage
 3. Cache e error handling
@@ -301,17 +315,20 @@ Prima di dichiarare un task completato, verifica:
 ## 🎓 Context per l'Agent
 
 ### Livello Utente:
+
 - **JavaScript/TypeScript**: Senior (usa pattern avanzati)
 - **React**: Junior (spiega concetti, usa pattern semplici)
 - **Finanza**: Neofita (spiega cosa fanno i calcoli)
 
 ### Tone:
+
 - Professionale ma friendly
 - Spiega decisioni tecniche
 - Non dare per scontate conoscenze React avanzate
 - Spiega termini finanziari
 
 ### Communication:
+
 - Sii conciso ma completo
 - Evidenzia cosa hai fatto
 - Specifica cosa manca
@@ -322,6 +339,7 @@ Prima di dichiarare un task completato, verifica:
 ## 📝 Template Comunicazione con Utente
 
 **All'inizio della sessione:**
+
 ```
 Ho letto i file di stato del progetto:
 - PROJECT_STATE.md: [breve summary]
@@ -332,6 +350,7 @@ Cosa vuoi implementare oggi?
 ```
 
 **Durante implementazione:**
+
 ```
 ✅ Ho creato/modificato:
 - File 1: [descrizione]
@@ -351,6 +370,7 @@ Cosa vuoi implementare oggi?
 ```
 
 **Quando incontri un errore:**
+
 ```
 🐛 Ho incontrato un errore:
 - Problema: [descrizione]
@@ -366,6 +386,7 @@ Cosa vuoi implementare oggi?
 ## 🚀 Quick Reference
 
 ### Comandi Utili
+
 ```bash
 npm install          # Prima volta
 npm run dev          # Sviluppo
@@ -374,6 +395,7 @@ npm run preview      # Preview build
 ```
 
 ### File Path Alias
+
 ```typescript
 @/components/*       // src/components/*
 @/types/*           // src/types/*
@@ -382,25 +404,26 @@ npm run preview      # Preview build
 ```
 
 ### Store Actions Disponibili
+
 ```typescript
 // Analisi
-setAnalysis(data)
-clearAnalysis()
+setAnalysis(data);
+clearAnalysis();
 
 // Portfolio
-addPosition(position)
-updatePosition(id, updates)
-removePosition(id)
-updatePortfolioPrice(symbol, price)
+addPosition(position);
+updatePosition(id, updates);
+removePosition(id);
+updatePortfolioPrice(symbol, price);
 
 // Journal
-addJournalEntry(entry)
-updateJournalEntry(id, updates)
-removeJournalEntry(id)
+addJournalEntry(entry);
+updateJournalEntry(id, updates);
+removeJournalEntry(id);
 
 // UI
-setLoading(bool)
-setError(string)
+setLoading(bool);
+setError(string);
 ```
 
 ---
@@ -408,16 +431,19 @@ setError(string)
 ## 🎯 Obiettivi per Ogni Sessione
 
 **Minimo**:
+
 - Implementare almeno 1 componente funzionante
 - Aggiornare documentazione
 - Zero errori TypeScript
 
 **Ideale**:
+
 - Completare 1 modulo intero
 - Aggiungere tests manuali
 - Documentare decisioni
 
 **Eccellente**:
+
 - Completare feature + UI polish
 - Aggiungere edge cases handling
 - Suggerire miglioramenti
@@ -427,12 +453,14 @@ setError(string)
 ## 📞 Quando Chiedere Chiarimenti
 
 Chiedi all'utente quando:
+
 - Ci sono più modi per implementare qualcosa
 - Serve una decisione di design/UX
 - Pattern esistente non è chiaro
 - Specifiche ambigue
 
 NON chiedere per:
+
 - Decisioni tecniche standard (usa i pattern)
 - Styling (usa Tailwind come altri componenti)
 - Struttura file (segui quella esistente)
