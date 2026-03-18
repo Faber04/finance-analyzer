@@ -4,6 +4,19 @@ Questo file traccia cronologicamente tutte le implementazioni, modifiche e decis
 
 ---
 
+## 📅 Sessione 4 - 2026-03-18
+
+### ✅ Task Ad-Hoc / Modifiche Extra
+
+#### Fix Documentazione e Nuove Regole Agent
+- **Cosa**: 
+  - Corretto `PROJECT_STATE.md` aggiornando le cartelle portfolio e journal da "Da creare" a "Completo".
+  - Aggiornato `AGENT_INSTRUCTIONS.md` con nuove regole per committare ad ogni modifica riuscita e loggare i task ad-hoc puntualmente in questo file.
+- **Perché**: Richiesto dall'utente per allineare lo stato reale ai docs e per migliorare tracciabilità e versioning passo-passo dello sviluppo.
+- **File modificati**: `PROJECT_STATE.md`, `AGENT_INSTRUCTIONS.md`, `DEVELOPMENT_LOG.md`
+
+---
+
 ## 📅 Sessione 3 - 2026-03-15
 
 ### ✅ Implementato

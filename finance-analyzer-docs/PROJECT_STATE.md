@@ -300,14 +300,14 @@ finance-analyzer/
 │   │   ├── common/                           ✅ Completo
 │   │   ├── modules/
 │   │   │   ├── fundamental-analysis/         ✅ Completo
-│   │   │   ├── portfolio/                    ❌ Da creare
-│   │   │   └── journal/                      ❌ Da creare
+│   │   │   ├── portfolio/                    ✅ Completo
+│   │   │   └── journal/                      ✅ Completo
 │   │   └── Navigation.tsx                    ✅ Completo
 │   ├── pages/
 │   │   ├── DashboardPage.tsx                 ✅ Completo
 │   │   ├── AnalysisPage.tsx                  ✅ Completo
-│   │   ├── PortfolioPage.tsx                 🚧 Placeholder
-│   │   └── JournalPage.tsx                   🚧 Placeholder
+│   │   ├── PortfolioPage.tsx                 ✅ Completo
+│   │   └── JournalPage.tsx                   ✅ Completo
 │   ├── types/
 │   │   └── index.ts                          ✅ Completo
 │   ├── utils/

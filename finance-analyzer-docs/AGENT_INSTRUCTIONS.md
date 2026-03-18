@@ -260,12 +260,14 @@ import "./styles.css";
 - Responsive design (mobile + desktop)
 - Accessibilità base (labels, aria-labels dove serve)
 
-### ✅ DO Document:
+### ✅ DO Document & Version Control (NUOVE REGOLE UTENTE):
 
 - Commenti per logica complessa
 - JSDoc per funzioni utility complesse
 - Aggiornare PROJECT_STATE.md
 - Aggiungere entry in DEVELOPMENT_LOG.md
+- **Registrare SEMPRE** in DEVELOPMENT_LOG.md ogni step o modifica (task ad-hoc) richiesta in aggiunta a quelle previste.
+- **Git Commit**: Ad ogni singola modifica avvenuta con successo (codice o doc), devi SEMPRE effettuare un `git commit`.
 
 ---
 
