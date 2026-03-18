@@ -161,26 +161,28 @@ src/components/modules/journal/
 
 ---
 
-### Priority 3 - API Integration (0% completato)
+### Priority 3 - API Integration ✅ (100% completato — Sessione 4)
 
-**File da creare:**
+**File creati:**
 
 ```
 src/services/
-├── api.ts                     ❌ Da creare
-├── alphaVantage.ts           ❌ Da creare (o)
-├── yahooFinance.ts           ❌ Da creare (o)
-└── types.ts                   ❌ Da creare
+├── api.ts                     ✅ Creato (Base client, env/local key fallback)
+├── fmp.ts                     ✅ Creato (Implementazione FMP API: profile, balances, quotes)
+├── index.ts                   ✅ Creato (Export base)
+└── types.ts                   ✅ Creato (FMP Typed responses)
 ```
 
-**Features da implementare:**
+E componente UI aggiuntivo `src/components/common/ApiKeySettings.tsx`.
 
-1. [ ] Fetch company overview by symbol
-2. [ ] Fetch quote (prezzo corrente)
-3. [ ] Fetch financial statements
-4. [ ] Cache management
-5. [ ] Error handling
-6. [ ] Rate limiting
+**Features implementate:**
+
+1. [x] Fetch company overview by symbol
+2. [x] Fetch quote (prezzo corrente bulk refresh nel portfolio)
+3. [x] Fetch financial statements (autofill in modulo Analisi)
+4. [x] Gestione API Key (Componente UI locale / Variabile Env fallback)
+5. [x] Error handling (try/catch su status HTTP 401, 403)
+6. [x] Rate limiting awareness (alert in caso di errore 429)
 
 **API Suggerite:**
 

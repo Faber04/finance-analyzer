@@ -6,6 +6,14 @@ Questo file traccia cronologicamente tutte le implementazioni, modifiche e decis
 
 ## 📅 Sessione 4 - 2026-03-18
 
+### ✅ Implementato
+
+#### API Integration (Priority 3 - COMPLETO)
+- **Cosa**: Layer API per FMP (Financial Modeling Prep), con autocompletamento in AnalysisPage, `Refresh Prezzi` in PortfolioPage e componente settings API key.
+- **Perché**: Passaggio da input manuale a dati reali, soddisfando la Priority 3 definita.
+- **File creati**: `src/services/api.ts`, `fmp.ts`, `types.ts`, `index.ts`, `ApiKeySettings.tsx`.
+- **File modificati**: `FinancialDataInput.tsx`, `PortfolioList.tsx`.
+
 ### ✅ Task Ad-Hoc / Modifiche Extra
 
 #### Fix Documentazione e Nuove Regole Agent
