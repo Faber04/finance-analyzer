@@ -11,9 +11,20 @@ Questo file traccia cronologicamente tutte le implementazioni, modifiche e decis
 #### ERROR-001: FMP Legacy Endpoint (403 Forbidden)
 - **Problema**: L'Auto-Fill falliva con errore 403 causa endpoint legacy non più supportati per nuovi account.
 - **Soluzione**: Migrata l'integrazione FMP alla versione `/stable/` utilizzando parametri di query (`?symbol=`) invece di path parameters.
-- **File modificati**: `src/services/api.ts`, `src/services/fmp.ts`.
-- **Note**: Documentato dettagliatamente in `ERROR_LOG.md`.
+- **File modificati**: `src/services/api.ts`, `src/services/fmp.ts`, `src/pages/DashboardPage.tsx`, `src/components/charts/`.
+- **Note**: Documentato dettagliatamente in `ERROR_LOG.md`. Priority 4 (Charts) iniziata e completata.
 
+### Priority 4 - Charts & Visualizations ✅ (100% completato — Sessione 5)
+
+**Componenti creati:**
+
+```
+src/components/charts/
+├── PortfolioPerformanceChart.tsx  ✅ Creato
+├── SectorPieChart.tsx             ✅ Creato
+├── GainLossBarChart.tsx           ✅ Creato
+└── index.ts                       ✅ Creato
+```
 ---
 
 ## 📅 Sessione 4 - 2026-03-18

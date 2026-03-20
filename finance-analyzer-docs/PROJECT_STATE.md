@@ -1,8 +1,8 @@
 # 📊 Finance Analyzer - Stato del Progetto
 
 > **Ultimo aggiornamento**: 2026-03-20
-> **Versione**: 0.1.1 (Bugfix FMP API)
-> **Stato generale**: ✅ Base funzionante, API migrata a versione stabile
+> **Versione**: 0.2.0 (Priority 4 & 5 Complete)
+> **Stato generale**: ✅ Applicazione completa e pubblicata online
 
 ---
 
@@ -192,23 +192,23 @@ E componente UI aggiuntivo `src/components/common/ApiKeySettings.tsx`.
 
 ---
 
-### Priority 4 - Charts & Visualizations (0% completato)
+### Priority 4 - Charts & Visualizations ✅ (100% completato — Sessione 5)
 
-**Componenti da creare:**
+**Componenti creati:**
 
 ```
 src/components/charts/
-├── PortfolioPerformanceChart.tsx  ❌ Da creare
-├── SectorPieChart.tsx             ❌ Da creare
-├── GainLossBarChart.tsx           ❌ Da creare
-└── index.ts                       ❌ Da creare
+├── PortfolioPerformanceChart.tsx  ✅ Creato
+├── SectorPieChart.tsx             ✅ Creato
+├── GainLossBarChart.tsx           ✅ Creato
+└── index.ts                       ✅ Creato
 ```
 
 **Recharts già incluso nelle dipendenze!**
 
 ---
 
-### Priority 5 - Pubblicazione Online (Da Eseguire Dopo Priority 4)
+### Priority 5 - Pubblicazione Online ✅ (100% completato — Sessione 5)
 
 **Obiettivo:**
 Pubblicare la webapp su dominio live tramite FTP al completamento della Priority 4 descritta sopra.
@@ -219,11 +219,11 @@ Pubblicare la webapp su dominio live tramite FTP al completamento della Priority
 - **Password**: `arubaLDV2021`
 - **Remote Path**: `/finance-analyzer`
 
-**Workflow Richiesto al Completamento della Priority 4:**
-1. [ ] Eseguire la build per produzione (`npm run build`).
-2. [ ] Pubblicare via FTP il contenuto generato in `/dist` nella root `/finance-analyzer` del server di produzione.
-3. [ ] Committare tutti i cambiamenti (`git add -A` e `git commit -m "[Priority 4] Completata e pubblicata"`).
-4. [ ] Eseguire push sul branch `main`.
+**Workflow Completato:**
+1. [x] Eseguire la build per produzione (`npm run build`).
+2. [x] Pubblicata via FTP `/dist` nella cartella `/finance-analyzer` (sotto `/www.faber04.com/`).
+3. [x] Committati tutti i cambiamenti.
+4. [x] Eseguito push sul branch `main`.
 
 ---
 
