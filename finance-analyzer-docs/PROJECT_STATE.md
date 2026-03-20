@@ -314,7 +314,7 @@ finance-analyzer/
 │   │   └── index.ts                          ✅ Completo
 │   ├── utils/
 │   │   └── financial-calculations.ts         ✅ Completo
-│   ├── services/                             ❌ Da creare
+│   ├── services/                             ✅ Completo
 │   ├── store.ts                              ✅ Completo
 │   ├── App.tsx                               ✅ Completo
 │   ├── main.tsx                              ✅ Completo
@@ -335,8 +335,8 @@ finance-analyzer/
 
 **Cosa fare per primo:**
 
-1. Iniziare con la **Priority 3 - API Integration**
-2. Integrare chiamate base API o librerie (ad es. Alpha Vantage / YF). Wait state per i fetch.
+1. **Monitoraggio Live**: Verificare la stabilità della connessione API sul server di produzione.
+2. **Backlog Cleanup**: Iniziare a smaltire i task a bassa priorità (Screener o Dark Mode).
 
 **Cosa NON modificare (funziona già):**
 
