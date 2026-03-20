@@ -256,6 +256,9 @@ Pubblicare la webapp su dominio live tramite FTP al completamento della Priority
 **Node.js**: Richiede versione 18+
 **Package Manager**: npm (o yarn/pnpm)
 
+**Variabili di Ambiente**:
+- `VITE_FMP_API_KEY`: Key per Financial Modeling Prep (storata in `.env.local`)
+
 **Comandi disponibili:**
 
 ```bash
