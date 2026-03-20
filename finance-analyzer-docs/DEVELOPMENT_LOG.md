@@ -11,8 +11,8 @@ Questo file traccia cronologicamente tutte le implementazioni, modifiche e decis
 #### ERROR-001: FMP Legacy Endpoint (403 Forbidden)
 - **Problema**: L'Auto-Fill falliva con errore 403 causa endpoint legacy non più supportati per nuovi account.
 - **Soluzione**: Migrata l'integrazione FMP alla versione `/stable/` utilizzando parametri di query (`?symbol=`) invece di path parameters.
-- **File modificati**: `src/services/api.ts`, `src/services/fmp.ts`, `src/pages/DashboardPage.tsx`, `src/components/charts/`.
-- **Note**: Documentato dettagliatamente in `ERROR_LOG.md`. Priority 4 (Charts) iniziata e completata.
+- **File modificati**: `src/services/api.ts`, `src/services/fmp.ts`, `src/pages/DashboardPage.tsx`, `src/components/charts/`, `vite.config.ts`.
+- **Note**: Documentato in `ERROR_LOG.md`. Priority 4 (Charts) e Priority 5 (Deploy) completati e spostati in `/app/finance-analyzer/`.
 
 ### Priority 4 - Charts & Visualizations ✅ (100% completato — Sessione 5)
 
@@ -25,6 +25,14 @@ src/components/charts/
 ├── GainLossBarChart.tsx           ✅ Creato
 └── index.ts                       ✅ Creato
 ```
+
+### Priority 5 - Pubblicazione Online (COMPLETO)
+- **Cosa**: Build di produzione e deploy via FTP.
+- **Perché**: Conclusione milestone Priority 4 & 5.
+- **File caricati**: `index.html`, `assets/index-*.js`, `assets/index-*.css`.
+- **URL**: `https://www.faber04.com/app/finance-analyzer/`
+- **Fix 404**: Risolto l'errore degli asset spostando la base dell'app e impostando il `base` path in `vite.config.ts`.
+
 ---
 
 ## 📅 Sessione 4 - 2026-03-18

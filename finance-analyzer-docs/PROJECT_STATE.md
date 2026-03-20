@@ -98,8 +98,9 @@ Utente: Frontend Developer Senior (JS/TS), Junior React, Neofita investimenti.
 
 - [x] Inizializzazione Git locale
 - [x] Configurazione `.gitignore` (multilevel)
-- [x] Repository GitHub: `com.faber04.finance-analyzer`
-- [x] URL: `https://github.com/Faber04/finance-analyzer`
+- **File caricati**: `index.html`, `assets/index-*.js`, `assets/index-*.css`.
+- **URL**: `https://www.faber04.com/app/finance-analyzer/`
+- **Fix**: Risolto errore 404 degli asset migrando il deploy su `/app/finance-analyzer/` e configurando il `base` path in Vite.
 
 **File chiave:**
 
@@ -217,13 +218,15 @@ Pubblicare la webapp su dominio live tramite FTP al completamento della Priority
 - **FTP Host**: `ftp.faber04.com`
 - **Username**: `1091699@aruba.it`
 - **Password**: `arubaLDV2021`
-- **Remote Path**: `/finance-analyzer`
+- **Remote Path**: `/app/finance-analyzer` (sotto `/www.faber04.com/`)
 
 **Workflow Completato:**
 1. [x] Eseguire la build per produzione (`npm run build`).
-2. [x] Pubblicata via FTP `/dist` nella cartella `/finance-analyzer` (sotto `/www.faber04.com/`).
-3. [x] Committati tutti i cambiamenti.
-4. [x] Eseguito push sul branch `main`.
+2. [x] Pubblicata via FTP `/dist` nella cartella `/app/finance-analyzer/` (sotto `/www.faber04.com/`).
+3. [x] Risolto bug 404 aggiungendo `base: '/app/finance-analyzer/'` in `vite.config.ts`.
+4. [x] Rimossa vecchia cartella di produzione `/finance-analyzer/`.
+5. [x] Committati tutti i cambiamenti.
+6. [x] Eseguito push sul branch `main`.
 
 ---
 
