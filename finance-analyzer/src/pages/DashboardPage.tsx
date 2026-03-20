@@ -3,6 +3,7 @@ import { Card } from '@/components/common';
 import { useAppStore } from '@/store';
 import { TrendingUp, TrendingDown, DollarSign, FileText } from 'lucide-react';
 import { formatCurrency, formatPercentage } from '@/utils/financial-calculations';
+import { SectorPieChart, GainLossBarChart } from '@/components/charts';
 
 export const DashboardPage: React.FC = () => {
   const { portfolio, journalEntries, currentAnalysis } = useAppStore();
@@ -74,8 +75,30 @@ export const DashboardPage: React.FC = () => {
         })}
       </div>
 
-      {/* Quick Info */}
+      {/* Quick Info & Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Allocazione Settori */}
+        <SectorPieChart 
+          title="Allocazione per Settore"
+          subtitle="Distribuzione valore portfolio"
+          data={portfolio.positions.map(p => ({
+            name: p.sector || 'N/A',
+            value: p.shares * p.currentPrice
+          }))}
+          valueFormatter={formatCurrency}
+        />
+
+        {/* Gain/Loss per Posizione */}
+        <GainLossBarChart 
+          title="Performance per Posizione"
+          subtitle="Guadagno/Perdita in Euro"
+          data={portfolio.positions.map(p => ({
+            name: p.symbol,
+            value: (p.currentPrice - p.avgCostPerShare) * p.shares
+          }))}
+          valueFormatter={formatCurrency}
+        />
+
         {/* Ultima Analisi */}
         <Card title="Ultima Analisi">
           {currentAnalysis ? (
