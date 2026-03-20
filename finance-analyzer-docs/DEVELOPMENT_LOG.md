@@ -11,6 +11,7 @@ Questo file traccia cronologicamente tutte le implementazioni, modifiche e decis
 #### ERROR-001: FMP Legacy Endpoint (403 Forbidden)
 - **Problema**: L'Auto-Fill falliva con errore 403 causa endpoint legacy non più supportati per nuovi account.
 - **Soluzione**: Migrata l'integrazione FMP alla versione `/stable/` utilizzando parametri di query (`?symbol=`) invece di path parameters.
+- **Fix Routing**: Impostata la prop `basename` in `App.tsx` per gestire correttamente la navigazione in una sottocartella.
 - **File modificati**: `src/services/api.ts`, `src/services/fmp.ts`, `src/pages/DashboardPage.tsx`, `src/components/charts/`, `vite.config.ts`.
 - **Note**: Documentato in `ERROR_LOG.md`. Priority 4 (Charts) e Priority 5 (Deploy) completati e spostati in `/app/finance-analyzer/`.
 

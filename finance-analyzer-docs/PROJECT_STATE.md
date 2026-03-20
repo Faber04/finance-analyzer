@@ -224,9 +224,10 @@ Pubblicare la webapp su dominio live tramite FTP al completamento della Priority
 1. [x] Eseguire la build per produzione (`npm run build`).
 2. [x] Pubblicata via FTP `/dist` nella cartella `/app/finance-analyzer/` (sotto `/www.faber04.com/`).
 3. [x] Risolto bug 404 aggiungendo `base: '/app/finance-analyzer/'` in `vite.config.ts`.
-4. [x] Rimossa vecchia cartella di produzione `/finance-analyzer/`.
-5. [x] Committati tutti i cambiamenti.
-6. [x] Eseguito push sul branch `main`.
+4. [x] Risolto bug routing aggiungendo `basename="/app/finance-analyzer"` in `src/App.tsx`.
+5. [x] Rimossa vecchia cartella di produzione `/finance-analyzer/`.
+6. [x] Committati tutti i cambiamenti.
+7. [x] Eseguito push sul branch `main`.
 
 ---
 
