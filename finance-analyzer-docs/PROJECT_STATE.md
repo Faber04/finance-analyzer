@@ -234,6 +234,7 @@ Pubblicare la webapp su dominio live tramite FTP al completamento della Priority
 ## 📋 Backlog (Priorità Bassa)
 
 - [x] Analisi Recenti — persistere in localStorage/IndexedDB le ultime analisi effettuate, mostrarle nel box "Analisi Recenti" in homepage (rinominato da "Ultima Analisi"), con possibilità di rimuovere singole voci dalla lista
+- [x] Reset Analisi al caricamento — pulire i dati finanziari e nascondere il pannello dei risultati ogni volta che si accede alla sezione "Analisi Fondamentale"
 - [ ] Screener multi-azienda
 - [ ] Comparazione side-by-side
 - [ ] Export PDF reports
