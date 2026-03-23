@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useAppStore } from '@/store';
 import { 
   FinancialDataInput, 
@@ -7,7 +7,11 @@ import {
 } from '@/components/modules/fundamental-analysis';
 
 export const AnalysisPage: React.FC = () => {
-  const { currentAnalysis, currentRatios, currentScore } = useAppStore();
+  const { currentAnalysis, currentRatios, currentScore, clearAnalysis } = useAppStore();
+
+  useEffect(() => {
+    clearAnalysis();
+  }, [clearAnalysis]);
 
   return (
     <div className="space-y-6">
