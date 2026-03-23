@@ -29,6 +29,9 @@ export const FinancialDataInput: React.FC = () => {
 
   const [isApiLoading, setIsApiLoading] = useState(false);
 
+  const sanitizeNumber = (val: unknown): number =>
+    typeof val === 'number' && isFinite(val) ? val : 0;
+
   const handleAutofill = async () => {
     if (!formData.symbol) {
       alert("Inserisci il simbolo prima di autocompletare dai dati API.");
@@ -38,13 +41,31 @@ export const FinancialDataInput: React.FC = () => {
     setIsApiLoading(true);
     try {
       const data = await getCompanyFinancials(formData.symbol);
-      setFormData(prev => ({ ...prev, ...data }));
+      // Sanitizza i campi numerici per evitare NaN negli input
+      setFormData(prev => ({
+        ...prev,
+        ...data,
+        revenue:             sanitizeNumber(data.revenue),
+        netIncome:           sanitizeNumber(data.netIncome),
+        totalAssets:         sanitizeNumber(data.totalAssets),
+        totalLiabilities:    sanitizeNumber(data.totalLiabilities),
+        shareholdersEquity:  sanitizeNumber(data.shareholdersEquity),
+        longTermDebt:        sanitizeNumber(data.longTermDebt),
+        currentAssets:       sanitizeNumber(data.currentAssets),
+        currentLiabilities:  sanitizeNumber(data.currentLiabilities),
+        eps:                 sanitizeNumber(data.eps),
+        bookValuePerShare:   sanitizeNumber(data.bookValuePerShare),
+        dividendPerShare:    sanitizeNumber(data.dividendPerShare),
+        currentPrice:        sanitizeNumber(data.currentPrice),
+        sharesOutstanding:   sanitizeNumber(data.sharesOutstanding),
+      }));
     } catch (err: any) {
       alert(err.message || "Errore durante l'autocompletamento. Verifica il simbolo e l'API Key.");
     } finally {
       setIsApiLoading(false);
     }
   };
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
