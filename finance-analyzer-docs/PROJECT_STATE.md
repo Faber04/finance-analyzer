@@ -1,7 +1,7 @@
 # 📊 Finance Analyzer - Stato del Progetto
 
-> **Ultimo aggiornamento**: 2026-03-20
-> **Versione**: 0.2.0 (Priority 4 & 5 Complete)
+> **Ultimo aggiornamento**: 2026-03-23
+> **Versione**: 0.3.0 (Analisi Recenti & Reset Complete)
 > **Stato generale**: ✅ Applicazione completa e pubblicata online
 
 ---
@@ -235,6 +235,7 @@ Pubblicare la webapp su dominio live tramite FTP al completamento della Priority
 
 - [x] Analisi Recenti — persistere in localStorage/IndexedDB le ultime analisi effettuate, mostrarle nel box "Analisi Recenti" in homepage (rinominato da "Ultima Analisi"), con possibilità di rimuovere singole voci dalla lista
 - [x] Reset Analisi al caricamento — pulire i dati finanziari e nascondere il pannello dei risultati ogni volta che si accede alla sezione "Analisi Fondamentale"
+- [ ] Pagina Settings — creare una sezione dedicata alle impostazioni (es. API Key) con menu laterale e pannelli per argomento, rimuovendo le impostazioni sparse dalle altre viste
 - [ ] Screener multi-azienda
 - [ ] Comparazione side-by-side
 - [ ] Export PDF reports
