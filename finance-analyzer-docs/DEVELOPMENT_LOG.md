@@ -12,9 +12,9 @@
   - Aggiornato `name` in `package.json`.
   - Aggiornati titoli e link in `README.md`, `QUICK_START.md` e in tutti i file di documentazione.
   - Aggiornato `basename` in `App.tsx` e `base` in `vite.config.ts`.
-- **Bug Fix**: Risolto errore 402 (Payment Required) nel portfolio aggiornando `getBulkQuotes` per eseguire chiamate individuali in parallelo, aggirando il limite del piano gratuito FMP per le fetch di gruppo.
-- **Delyoment**: Pubblicata la nuova versione via FTP su `https://www.faber04.com/app/finance-analyzer/`.
-- **File modificati**: `package.json`, `README.md`, `QUICK_START.md`, `PROJECT_STATE.md`, `DEVELOPMENT_LOG.md`, `docs/README.md`, `App.tsx`, `vite.config.ts`, `fmp.ts`.
+- **Bug Fix**: Risolto errore 402 (Payment Required) nel portfolio e sistemato il bug estetico del raddoppio del segno `+` nei rendimenti e guadagni.
+- **Deploy**: Pubblicata la versione aggiornata via FTP su `https://www.faber04.com/app/finance-analyzer/`.
+- **File modificati**: `package.json`, `README.md`, `QUICK_START.md`, `PROJECT_STATE.md`, `DEVELOPMENT_LOG.md`, `docs/README.md`, `App.tsx`, `vite.config.ts`, `fmp.ts`, `PortfolioList.tsx`, `PositionCard.tsx`, `financial-calculations.ts`.
 
 ---
 
