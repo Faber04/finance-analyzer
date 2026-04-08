@@ -48,27 +48,16 @@ npm install
 # 3. Configura le variabili di ambiente
 echo "VITE_FMP_API_KEY=tua_api_key_qui" > .env.local
 
-# 4. Avvia il server di sviluppo
-npm run dev
-```
+### Configurazione API Key
+L'applicazione richiede una API Key di **Financial Modeling Prep**. Puoi configurarla in due modi:
+1. **Nell'App**: Usa il componente "Impostazioni API" direttamente nella dashboard o nella pagina Analisi (i dati vengono salvati nel browser).
+2. **File Environment**: Crea un file `.env.local` nella cartella `finance-analyzer/` con: `VITE_FMP_API_KEY=tua_api_key`.
 
 ## 📁 Struttura del Progetto
 
-```
-.
-├── finance-analyzer/          # Codice sorgente dell'applicazione
-│   ├── src/
-│   │   ├── components/        # Componenti UI e Grafici
-│   │   ├── services/          # Integrazione API
-│   │   ├── pages/             # Pagine principali
-│   │   ├── types/             # Definizioni TypeScript
-│   │   ├── utils/             # Logica e calcoli
-│   │   └── store.ts           # Stato globale (Zustand)
-│   ├── package.json
-│   └── vite.config.ts
-├── finance-analyzer-docs/     # Documentazione tecnica e log sessioni
-└── README.md                  # Questo file
-```
+- **[finance-analyzer/](file:///Users/fabiobernardi/Development/web/com.faber04.finance-analyzer/finance-analyzer/)**: Codice sorgente dell'applicazione (Vite + React + TS).
+- **[finance-analyzer-docs/](file:///Users/fabiobernardi/Development/web/com.faber04.finance-analyzer/finance-analyzer-docs/)**: Documentazione tecnica, log di sviluppo e istruzioni per l'AI Agent.
+- **README.md**: Questo file.
 
 ## 🧮 Criteri di Valutazione (Scoring)
 
