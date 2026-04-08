@@ -1,4 +1,4 @@
-# 💰 Finance Analyzer
+# 💰 com.faber04.finance-analyzer
 
 Una webapp professionale per analizzare investimenti, capire i bilanci delle aziende e applicare i principi di Value Investing di Benjamin Graham e Warren Buffett.
 
@@ -39,8 +39,8 @@ Una webapp professionale per analizzare investimenti, capire i bilanci delle azi
 
 ```bash
 # 1. Clona/scarica il progetto
-git clone https://github.com/Faber04/finance-analyzer.git
-cd finance-analyzer
+git clone https://github.com/Faber04/com.faber04.finance-analyzer.git
+cd com.faber04.finance-analyzer
 
 # 2. Installa le dipendenze
 npm install

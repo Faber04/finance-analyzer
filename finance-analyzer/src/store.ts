@@ -165,7 +165,7 @@ export const useAppStore = create<AppStore>()(
       setError: (error) => set({ error }),
     }),
     {
-      name: 'finance-analyzer-storage',
+      name: 'com.faber04.finance-analyzer-storage',
       partialize: (state) => ({
         portfolio: state.portfolio,
         journalEntries: state.journalEntries,

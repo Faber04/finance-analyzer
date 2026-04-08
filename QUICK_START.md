@@ -1,4 +1,4 @@
-# 🚀 Quick Start - Sistema di Continuità per Claude
+# 🚀 Quick Start - Sistema di Continuità per Claude - com.faber04.finance-analyzer
 
 ## Per Te (Sviluppatore)
 

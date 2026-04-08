@@ -19,7 +19,7 @@ export const Navigation: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
               <TrendingUp className="w-8 h-8 text-primary-600" />
-              <span className="text-xl font-bold text-gray-900">Finance Analyzer</span>
+              <span className="text-xl font-bold text-gray-900">com.faber04.finance-analyzer</span>
             </Link>
           </div>
 

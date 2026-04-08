@@ -1,4 +1,4 @@
-# 📚 Finance Analyzer - Sistema di Documentazione e Continuità
+# 📚 com.faber04.finance-analyzer - Sistema di Documentazione e Continuità
 
 Questo sistema permette all'AI Agent (Claude) di lavorare sul progetto attraverso sessioni multiple mantenendo piena continuità e memoria del lavoro svolto.
 

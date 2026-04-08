@@ -1,3 +1,23 @@
+# 📝 Development Log - com.faber04.finance-analyzer
+
+## 📅 Sessione 6 - 2026-04-08
+
+### ✅ Implementato
+
+#### Project Renaming (COMPLETO)
+- **Cosa**: Rinominato il progetto da `finance-analyzer` a `com.faber04.finance-analyzer`.
+- **Perché**: Richiesta utente per uniformare il nome del repository GitHub alle cartelle locali.
+- **Modifiche effettuate**:
+  - Aggiornato Git remote URL a `https://github.com/Faber04/com.faber04.finance-analyzer.git`.
+  - Aggiornato `name` in `package.json`.
+  - Aggiornati titoli e link in `README.md`, `QUICK_START.md` e in tutti i file di documentazione.
+  - Aggiornato `basename` in `App.tsx` e `base` in `vite.config.ts`.
+- **Bug Fix**: Risolto errore 402 (Payment Required) nel portfolio aggiornando `getBulkQuotes` per eseguire chiamate individuali in parallelo, aggirando il limite del piano gratuito FMP per le fetch di gruppo.
+- **Delyoment**: Pubblicata la nuova versione via FTP su `https://www.faber04.com/app/finance-analyzer/`.
+- **File modificati**: `package.json`, `README.md`, `QUICK_START.md`, `PROJECT_STATE.md`, `DEVELOPMENT_LOG.md`, `docs/README.md`, `App.tsx`, `vite.config.ts`, `fmp.ts`.
+
+---
+
 # 📝 Development Log - Finance Analyzer
 
 Questo file traccia cronologicamente tutte le implementazioni, modifiche e decisioni prese durante lo sviluppo.

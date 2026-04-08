@@ -98,11 +98,18 @@ export async function getCompanyFinancials(symbol: string): Promise<Partial<Comp
 export async function getBulkQuotes(symbols: string[]): Promise<Record<string, number>> {
   if (symbols.length === 0) return {};
 
-  const uniqueSymbols = Array.from(new Set(symbols)).join(',');
-  const quotesData = await fetchFromFmp<FMPQuote[]>(`/quote?symbol=${uniqueSymbols}`);
+  const uniqueSymbols = Array.from(new Set(symbols));
+  
+  // Fetch ogni quotazione singolarmente per rispettare i limiti del piano Free di FMP
+  // (che non permette batch requests separate da virgola)
+  const quotesPromises = uniqueSymbols.map(sym => fetchQuote(sym));
+  const quotesResults = await Promise.all(quotesPromises);
+  
+  // Appiattiamo l'array di array (dato che fetchQuote torna FMPQuote[])
+  const allQuotes = quotesResults.flat();
   
   const priceMap: Record<string, number> = {};
-  quotesData.forEach(q => {
+  allQuotes.forEach(q => {
     priceMap[q.symbol] = q.price;
   });
 
