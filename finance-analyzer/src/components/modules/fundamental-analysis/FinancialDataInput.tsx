@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Input, Button, ApiKeySettings } from '@/components/common';
+import { Card, Input, Button } from '@/components/common';
 import { CompanyFinancials } from '@/types';
 import { useAppStore } from '@/store';
 import { getCompanyFinancials } from '@/services';
@@ -97,7 +97,6 @@ export const FinancialDataInput: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <ApiKeySettings />
       <Card title="Inserisci i Dati Finanziari" subtitle="Compila i campi con i dati dal bilancio dell'azienda">
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Informazioni base */}

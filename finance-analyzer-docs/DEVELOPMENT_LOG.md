@@ -1,5 +1,20 @@
 # 📝 Development Log - com.faber04.finance-analyzer
 
+## 📅 Sessione 8 - 2026-04-09
+
+### ✅ Implementato
+
+#### Settings Page e API Key Ricollocazione
+- **Cosa**: Creata una nuova pagina "Impostazioni" e rimosso il widget della API Key dai moduli di Analisi e Portfolio.
+- **Perché**: Refactoring UX richiesto dal backlog per raccogliere in un unico posto le impostazioni dell'utente.
+- **Modifiche effettuate**:
+  - Rimosso `ApiKeySettings` da `FinancialDataInput.tsx` e `PortfolioList.tsx`.
+  - Creata `SettingsPage.tsx` con tabs laterali (Generali, Integrazioni API).
+  - Aggiunto link "Impostazioni" in `Navigation.tsx` e aggiornato il router in `App.tsx`.
+- **File modificati**: `FinancialDataInput.tsx`, `PortfolioList.tsx`, `SettingsPage.tsx`, `App.tsx`, `Navigation.tsx`, `PROJECT_STATE.md`.
+
+---
+
 ## 📅 Sessione 7 - 2026-04-09
 
 ### ✅ Implementato

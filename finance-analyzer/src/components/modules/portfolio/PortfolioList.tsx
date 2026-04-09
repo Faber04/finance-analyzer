@@ -7,7 +7,7 @@ import {
   AlertCircle,
   RefreshCw,
 } from "lucide-react";
-import { Card, Button, ApiKeySettings } from "@/components/common";
+import { Card, Button } from "@/components/common";
 import { useAppStore } from "@/store";
 import { PortfolioPosition } from "@/types";
 import {
@@ -58,7 +58,6 @@ export const PortfolioList: React.FC = () => {
   if (positions.length === 0) {
     return (
       <div className="space-y-6">
-        <ApiKeySettings />
         <Card>
         <div className="text-center py-16">
           <div className="w-16 h-16 bg-primary-50 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -92,7 +91,6 @@ export const PortfolioList: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <ApiKeySettings />
       
       <div className="flex justify-between items-center">
         <h2 className="text-xl font-bold text-gray-900">Il Tuo Portfolio</h2>

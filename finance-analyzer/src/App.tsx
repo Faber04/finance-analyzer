@@ -4,6 +4,7 @@ import { DashboardPage } from './pages/DashboardPage';
 import { AnalysisPage } from './pages/AnalysisPage';
 import { PortfolioPage } from './pages/PortfolioPage';
 import { JournalPage } from './pages/JournalPage';
+import { SettingsPage } from './pages/SettingsPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/analysis" element={<AnalysisPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/journal" element={<JournalPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
           </Routes>
         </main>
       </div>
