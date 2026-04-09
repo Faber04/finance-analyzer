@@ -1,8 +1,9 @@
 # 📊 com.faber04.finance-analyzer - Stato del Progetto
 
-> **Ultimo aggiornamento**: 2026-03-23
-> **Versione**: 0.3.0 (Analisi Recenti & Reset Complete)
-> **Stato generale**: ✅ Applicazione completa e pubblicata online
+> **Ultimo aggiornamento**: 2026-04-09
+> **Versione**: 0.3.1 (Rebranding & Deploy Consolidato)
+> **Stato generale**: ✅ Applicazione completa, verificata e pubblicata online
+
 
 ---
 
