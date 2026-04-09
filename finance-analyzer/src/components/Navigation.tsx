@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { TrendingUp, LineChart, Briefcase, BookOpen } from "lucide-react";
+import { TrendingUp, LineChart, Briefcase, BookOpen, Settings } from "lucide-react";
 
 export const Navigation: React.FC = () => {
   const location = useLocation();
@@ -10,6 +10,7 @@ export const Navigation: React.FC = () => {
     { path: "/analysis", label: "Analisi Fondamentale", icon: LineChart },
     { path: "/portfolio", label: "Portfolio", icon: Briefcase },
     { path: "/journal", label: "Journal", icon: BookOpen },
+    { path: "/settings", label: "Impostazioni", icon: Settings },
   ];
 
   return (
