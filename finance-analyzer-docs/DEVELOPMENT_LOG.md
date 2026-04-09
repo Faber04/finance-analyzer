@@ -15,6 +15,15 @@
 
 ---
 
+### ✅ Task Ad-Hoc / Modifiche Extra
+
+#### Aggiunta task al Backlog
+- **Cosa**: Aggiunta voce al backlog per la rimozione globale del box "Financial Modeling Prep API Key".
+- **Perché**: Richiesta utente per pianificare la rimozione di tale componente in tutta l'applicazione.
+- **File modificati**: `PROJECT_STATE.md`.
+
+---
+
 
 
 ### ✅ Implementato

@@ -236,6 +236,7 @@ Pubblicare la webapp su dominio live tramite FTP al completamento della Priority
 
 - [x] Analisi Recenti — persistere in localStorage/IndexedDB le ultime analisi effettuate, mostrarle nel box "Analisi Recenti" in homepage (rinominato da "Ultima Analisi"), con possibilità di rimuovere singole voci dalla lista
 - [x] Reset Analisi al caricamento — pulire i dati finanziari e nascondere il pannello dei risultati ogni volta che si accede alla sezione "Analisi Fondamentale"
+- [ ] Rimuovere box "Financial Modeling Prep API Key" — eliminare ovunque il box per l'inserimento della API Key
 - [ ] Pagina Settings — creare una sezione dedicata alle impostazioni (es. API Key) con menu laterale e pannelli per argomento, rimuovendo le impostazioni sparse dalle altre viste
 - [ ] Screener multi-azienda
 - [ ] Comparazione side-by-side
