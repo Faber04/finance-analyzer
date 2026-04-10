@@ -65,6 +65,20 @@
 
 ---
 
+## 📅 Sessione 12 - 2026-04-10
+
+### 🐛 Fix Routing Produzione - HashRouter
+- **Cosa**: Risolto problema pagina bianca in produzione cambiando da BrowserRouter a HashRouter.
+- **Perché**: Il server condiviso non supporta fallback a index.html per route client-side, causando 404 su refresh/navigazione diretta.
+- **Modifiche effettuate**:
+  - Cambiato `BrowserRouter` a `HashRouter` in `App.tsx`.
+  - Rimosso `basename` da `App.tsx` e `base` da `vite.config.ts`.
+  - Ricostruito e ricaricato via FTP.
+- **Risultato**: App ora funziona correttamente con URL tipo `https://www.faber04.com/app/finance-analyzer/#/analysis`.
+- **File modificati**: `App.tsx`, `vite.config.ts`, `PROJECT_STATE.md`.
+
+---
+
 ### ✅ Implementato
 
 #### Header Rebranding Verification & Build
