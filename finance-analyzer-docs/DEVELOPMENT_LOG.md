@@ -79,6 +79,19 @@
 
 ---
 
+## 📅 Sessione 13 - 2026-04-10
+
+### 🐛 Fix Path Assets - Base Path Restore
+- **Cosa**: Risolto errori 404 per CSS/JS rimettendo il base path in vite.config.ts.
+- **Perché**: Anche con HashRouter, il base path è necessario per i file statici serviti da sottocartella.
+- **Modifiche effettuate**:
+  - Riaggiunto `base: '/app/finance-analyzer/'` in `vite.config.ts`.
+  - Ricostruito e ricaricato via FTP.
+- **Risultato**: File statici ora accessibili correttamente.
+- **File modificati**: `vite.config.ts`, `PROJECT_STATE.md`.
+
+---
+
 ### ✅ Implementato
 
 #### Header Rebranding Verification & Build
