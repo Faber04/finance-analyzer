@@ -51,6 +51,20 @@
 
 ---
 
+## 📅 Sessione 11 - 2026-04-10
+
+### 🐛 Fix Deploy - Code Splitting per Limite FTP
+- **Cosa**: Risolto errore "Unexpected end of script" in produzione dovuto a limite dimensione file FTP.
+- **Perché**: Il bundle JS principale (641KB) veniva troncato durante l'upload FTP (limite ~590KB).
+- **Modifiche effettuate**:
+  - Abilitato code splitting in `vite.config.ts` con `manualChunks` per vendor, ui e app.
+  - Ricostruito con `npm run build` generando chunk più piccoli: 69KB, 165KB, 405KB.
+  - Ricaricato tutti i file via FTP con `lftp`.
+- **Risultato**: App ora carica correttamente in produzione senza errori.
+- **File modificati**: `vite.config.ts`, `PROJECT_STATE.md`.
+
+---
+
 ### ✅ Implementato
 
 #### Header Rebranding Verification & Build
