@@ -1,7 +1,7 @@
 # 📊 com.faber04.finance-analyzer - Stato del Progetto
 
 > **Ultimo aggiornamento**: 2026-04-10
-> **Versione**: 0.3.3 (Code Splitting Fix)
+> **Versione**: 0.3.4 (HashRouter Fix)
 > **Stato generale**: ✅ Applicazione completa, verificata e pubblicata online
 
 
