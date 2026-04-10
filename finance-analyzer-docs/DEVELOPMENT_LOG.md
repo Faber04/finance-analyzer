@@ -24,6 +24,17 @@
 - **Perché**: Richiesta utente per migliorare l'UX mobile sostituendo le icone con un menu hamburger.
 - **File modificati**: `PROJECT_STATE.md`.
 
+#### Implementazione Hamburger Menu Mobile
+- **Cosa**: Implementato hamburger menu per dispositivi mobili nel componente Navigation.tsx.
+- **Perché**: Completamento della prima voce del backlog per migliorare l'UX mobile.
+- **Modifiche effettuate**:
+  - Aggiunto stato `isMobileMenuOpen` per controllare l'apertura del menu.
+  - Importato icone `Menu` e `X` da lucide-react.
+  - Per desktop (md+): mantenuto il layout esistente con icone e etichette.
+  - Per mobile: aggiunto pulsante hamburger che toggla un dropdown menu con link verticali.
+  - Menu mobile si chiude automaticamente al click su un link.
+- **File modificati**: `src/components/Navigation.tsx`, `PROJECT_STATE.md`.
+
 ---
 
 ### ✅ Implementato
