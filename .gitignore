@@ -29,6 +29,7 @@ dist-ssr/
 # Editor
 .vscode/
 .idea/
+.github/
 *.suo
 *.ntvs*
 *.njsproj
